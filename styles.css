@@ -1,6 +1,12 @@
+.container{
+    width:540px;
+    overflow:auto;
+}
+
 .slider-inner{
     width:500px;
     height:400px;
+    float:left;
 }
 
 .slider-inner img{
@@ -11,4 +17,15 @@
 
 .slider-inner img.active{
     display:inline-block;
+}
+
+.prev, .next{
+    cursor: pointer;
+    z-index: 100;
+    float:left;
+}
+
+.slider-outer{
+    display: flex;
+    flex-direction: row;
 }
